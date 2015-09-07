@@ -1,0 +1,5 @@
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Resource\bin\Debug\Zero.Resource.dll
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Resource\bin\Debug\Zero.Resource.pdb
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Resource\obj\Debug\Zero.Resource.csprojResolveAssemblyReference.cache
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Resource\obj\Debug\Zero.Resource.dll
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Resource\obj\Debug\Zero.Resource.pdb

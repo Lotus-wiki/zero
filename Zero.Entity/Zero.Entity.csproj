@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68F6E189-B9A0-4786-A99F-F9763BDE3E19}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zero.Entity</RootNamespace>
+    <AssemblyName>Zero.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseUtility\BaseEntity.cs" />
+    <Compile Include="BaseUtility\DataContext.cs" />
+    <Compile Include="BaseUtility\EntityModel\FileProperty.cs" />
+    <Compile Include="CommonModule\Base_BackupJob.cs" />
+    <Compile Include="CommonModule\Base_Button.cs" />
+    <Compile Include="CommonModule\Base_ButtonPermission.cs" />
+    <Compile Include="CommonModule\Base_CodeRule.cs" />
+    <Compile Include="CommonModule\Base_CodeRuleDetail.cs" />
+    <Compile Include="CommonModule\Base_CodeRuleSerious.cs" />
+    <Compile Include="CommonModule\Base_Company.cs" />
+    <Compile Include="CommonModule\Base_DataDictionary.cs" />
+    <Compile Include="CommonModule\Base_DataDictionaryDetail.cs" />
+    <Compile Include="CommonModule\Base_DataScopePermission.cs" />
+    <Compile Include="CommonModule\Base_Department.cs" />
+    <Compile Include="CommonModule\Base_Employee.cs" />
+    <Compile Include="CommonModule\Base_ExcelImport.cs" />
+    <Compile Include="CommonModule\Base_ExcelImportDetail.cs" />
+    <Compile Include="CommonModule\Base_FormAttribute.cs" />
+    <Compile Include="CommonModule\Base_FormAttributeValue.cs" />
+    <Compile Include="CommonModule\Base_GroupUser.cs" />
+    <Compile Include="CommonModule\Base_InterfaceManage.cs" />
+    <Compile Include="CommonModule\Base_InterfaceManageParameter.cs" />
+    <Compile Include="CommonModule\Base_Module.cs" />
+    <Compile Include="CommonModule\Base_ModulePermission.cs" />
+    <Compile Include="CommonModule\Base_ObjectUserRelation.cs" />
+    <Compile Include="CommonModule\Base_Post.cs" />
+    <Compile Include="CommonModule\Base_ProvinceCity.cs" />
+    <Compile Include="CommonModule\Base_QueryRecord.cs" />
+    <Compile Include="CommonModule\Base_Roles.cs" />
+    <Compile Include="CommonModule\Base_Shortcuts.cs" />
+    <Compile Include="CommonModule\Base_SysLog.cs" />
+    <Compile Include="CommonModule\Base_SysLogDetail.cs" />
+    <Compile Include="CommonModule\Base_User.cs" />
+    <Compile Include="CommonModule\Base_View.cs" />
+    <Compile Include="CommonModule\Base_ViewPermission.cs" />
+    <Compile Include="CommonModule\Base_ViewWhere.cs" />
+    <Compile Include="ExampleModule\Base_Email.cs" />
+    <Compile Include="ExampleModule\Base_EmailAccessory.cs" />
+    <Compile Include="ExampleModule\Base_EmailAddressee.cs" />
+    <Compile Include="ExampleModule\Base_EmailCategory.cs" />
+    <Compile Include="ExampleModule\Base_NetworkFile.cs" />
+    <Compile Include="ExampleModule\Base_NetworkFolder.cs" />
+    <Compile Include="ExampleModule\Base_PhoneNote.cs" />
+    <Compile Include="ExampleModule\POOrder.cs" />
+    <Compile Include="ExampleModule\POOrderEntry.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zero.Cache\Zero.Cache.csproj">
+      <Project>{c76789f6-d2ff-43c9-b32e-29cd43f348e4}</Project>
+      <Name>Zero.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zero.DataAccess\Zero.DataAccess.csproj">
+      <Project>{6d5a4ac6-fa0a-47da-bd69-194edae997ee}</Project>
+      <Name>Zero.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zero.Utilitiy\Zero.Utility.csproj">
+      <Project>{0958e366-1193-4ebf-ba7f-ccf887367e96}</Project>
+      <Name>Zero.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

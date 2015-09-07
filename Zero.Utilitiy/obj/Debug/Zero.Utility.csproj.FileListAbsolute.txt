@@ -1,0 +1,12 @@
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\bin\Debug\Zero.Utilitiy.dll
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\bin\Debug\Zero.Utilitiy.pdb
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\bin\Debug\log4net.dll
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\bin\Debug\Newtonsoft.Json.dll
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\bin\Debug\SharpZipLib.dll
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\bin\Debug\Zero.DataAccess.dll
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\bin\Debug\MySql.Data.dll
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\bin\Debug\System.Data.SQLite.dll
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\bin\Debug\Zero.DataAccess.pdb
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\obj\Debug\Zero.Utility.csprojResolveAssemblyReference.cache
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\obj\Debug\Zero.Utilitiy.dll
+F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Utilitiy\obj\Debug\Zero.Utilitiy.pdb
