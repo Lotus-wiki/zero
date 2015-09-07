@@ -13,7 +13,7 @@
             //主表信息
             AjaxJson("/ExampleModule/Order/SetForm", { KeyValue: KeyValue }, function (data) {
                 SetWebControls(data);
-                $("#ModifyUserName").val("@LeaRun.Utility.ManageProvider.Provider.Current().UserName");
+                $("#ModifyUserName").val("@Zero.Utility.ManageProvider.Provider.Current().UserName");
                 $("#ModifyDate").val("@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")");
             });
             var rowindex = 1;

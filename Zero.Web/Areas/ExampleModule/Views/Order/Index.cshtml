@@ -137,11 +137,11 @@
                 </td>
                 <th>制单日期：</th>
                 <td>
-                    <input id="StartTime" type="text" class="txt Wdate" value="@LeaRun.Utility.DateTimeHelper.GetDate(-7)" style="width: 120px" onfocus="var endDate=$dp.$('EndTime');WdatePicker({onpicked:function(){EndTime.focus();},maxDate:'#F{$dp.$D(\'EndTime\')}'})" />
+                    <input id="StartTime" type="text" class="txt Wdate" value="@Zero.Utility.DateTimeHelper.GetDate(-7)" style="width: 120px" onfocus="var endDate=$dp.$('EndTime');WdatePicker({onpicked:function(){EndTime.focus();},maxDate:'#F{$dp.$D(\'EndTime\')}'})" />
                 </td>
                 <td>-</td>
                 <td>
-                    <input id="EndTime" type="text" class="txt Wdate" value="@LeaRun.Utility.DateTimeHelper.GetToday()" style="width: 120px" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'StartTime\')}'})" />
+                    <input id="EndTime" type="text" class="txt Wdate" value="@Zero.Utility.DateTimeHelper.GetToday()" style="width: 120px" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'StartTime\')}'})" />
                 </td>
                 <td>
                     <input id="btnSearch" type="button" class="btnSearch" value="搜 索" onclick="btn_Search()" />

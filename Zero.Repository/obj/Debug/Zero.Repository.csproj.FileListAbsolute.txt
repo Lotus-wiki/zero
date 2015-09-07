@@ -12,3 +12,17 @@ F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\SharpZipLib.dll
 F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\Newtonsoft.Json.dll
 F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\Zero.DataAccess.pdb
 F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\Zero.Utilitiy.pdb
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\Zero.Repository.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\Zero.Repository.pdb
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\Zero.DataAccess.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\Zero.Utilitiy.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\log4net.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\MySql.Data.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\System.Data.SQLite.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\SharpZipLib.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\Newtonsoft.Json.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\Zero.DataAccess.pdb
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\bin\Debug\Zero.Utilitiy.pdb
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\obj\Debug\Zero.Repository.csprojResolveAssemblyReference.cache
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\obj\Debug\Zero.Repository.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Repository\obj\Debug\Zero.Repository.pdb

@@ -1,6 +1,6 @@
 ﻿/**
- * jQuery LeaRunUI 4.1
- *信息技术有限公司 Copyright © Learun 2014
+ * jQuery ZeroUI 4.1
+ *信息技术有限公司 Copyright © Zero 2014
  */
 /* 表单验证使用实例！  */
 //获取Request notnull

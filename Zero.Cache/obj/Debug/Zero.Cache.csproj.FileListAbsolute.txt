@@ -3,3 +3,8 @@ F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Cache\bin\Debug\Zero.Cache.pdb
 F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Cache\obj\Debug\Zero.Cache.csprojResolveAssemblyReference.cache
 F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Cache\obj\Debug\Zero.Cache.dll
 F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.Cache\obj\Debug\Zero.Cache.pdb
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Cache\bin\Debug\Zero.Cache.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Cache\bin\Debug\Zero.Cache.pdb
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Cache\obj\Debug\Zero.Cache.csprojResolveAssemblyReference.cache
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Cache\obj\Debug\Zero.Cache.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.Cache\obj\Debug\Zero.Cache.pdb

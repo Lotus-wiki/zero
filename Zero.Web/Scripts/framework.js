@@ -1417,9 +1417,7 @@ function RootPath() {
     var pos = strFullPath.indexOf(strPath);
     var prePath = strFullPath.substring(0, pos);
     var postPath = strPath.substring(0, strPath.substr(1).indexOf('/') + 1);
-    //return (prePath + postPath);如果发布IIS，有虚假目录用用这句
-    alert(prePath);
-    alert(prePath + postPath);
+    //return (prePath + postPath);如果发布IIS，有虚拟目录用用这句
     return (prePath);
 }
 
