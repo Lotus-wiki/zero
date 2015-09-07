@@ -8,5 +8,6 @@ namespace Zero.WebService
 {
     public class Class1
     {
+        //测试一下
     }
 }
