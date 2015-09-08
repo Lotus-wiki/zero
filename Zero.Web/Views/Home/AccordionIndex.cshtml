@@ -137,7 +137,9 @@
         function GetAccordionMenu() {
             var html = "";
             getAjax("/Home/LoadAccordionMenu", "", function (data) {
+                
                 accordionJson = eval("(" + data + ")");
+                alert(accordionJson);
                 $.each(accordionJson, function (i) {
                     if (accordionJson[i].ParentId == '9f8ce93a-fc2d-4914-a59c-a6b49494108f') {
                         html += "<li title=" + accordionJson[i].FullName + ">";

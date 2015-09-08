@@ -76,6 +76,7 @@
     //登录加载
     function Load() {
         var Index = $.cookie('UItheme');
+        //window.location.href = '@Url.Content("~/Home/AccordionIndex")';
         if (Index) {
             window.location.href = '@Url.Content("~/Home/")' + Index;
         } else {
@@ -89,7 +90,7 @@
         $('.login-tips').append('<div class="form-' + type + '-text">' + msg + '</div>');
         //$('#btlogin').val(msg);
     }
-    </script>
+</script>
 
 </head>
 <body class="loginbody">
