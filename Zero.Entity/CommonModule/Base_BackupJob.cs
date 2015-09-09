@@ -1,6 +1,6 @@
 //=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
+// All Rights Reserved 
+// Software Developers 
 //=====================================================================================
 
 using Zero.DataAccess.Attributes;
@@ -14,10 +14,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 数据库备份计划表
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.09.23 17:30</date>
-    /// </author>
     /// </summary>
     [Description("数据库备份计划表")]
     [PrimaryKey("BackupId")]

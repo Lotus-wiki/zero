@@ -1,7 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
 
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
@@ -14,10 +10,7 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 系统日志明细
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.07.22 22:44</date>
-    /// </author>
+
     /// </summary>
     [Description("系统日志明细")]
     [PrimaryKey("SysLogDetailId")]

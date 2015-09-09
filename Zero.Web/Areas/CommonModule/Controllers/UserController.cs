@@ -125,6 +125,10 @@ namespace Zero.Web.Areas.CommonModule.Controllers
         [ValidateInput(false)]
         public ActionResult SetUserForm(string KeyValue)
         {
+            if (KeyValue=="System")
+            {
+                return Content("");
+            }
             Base_User base_user = DataFactory.Database().FindEntity<Base_User>(KeyValue);
             if (base_user == null)
             {

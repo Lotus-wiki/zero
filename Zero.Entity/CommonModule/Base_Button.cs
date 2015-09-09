@@ -1,6 +1,6 @@
 //=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
+// All Rights Reserved
+// Software Developers
 //=====================================================================================
 
 using Zero.DataAccess.Attributes;
@@ -15,10 +15,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 系统按钮
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.07.09 12:41</date>
-    /// </author>
     /// </summary>
     [DisplayName("按钮设置")]
     [PrimaryKey("ButtonId")]

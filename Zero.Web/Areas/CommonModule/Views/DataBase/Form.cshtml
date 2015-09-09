@@ -3,20 +3,20 @@
     Layout = "~/Views/Shared/_LayoutForm.cshtml";
 }
 <!--代码高亮start-->
-<link type="text/css" rel="stylesheet" href="~/Content/Scripts/SyntaxHighlighter/Styles/SyntaxHighlighter.css" />
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shCore.js" type="text/javascript" charset="GBK"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushCpp.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushCSharp.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushCss.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushDelphi.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushJava.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushJScript.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushPhp.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushPython.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushRuby.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushSql.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushVb.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushXml.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="~/Scripts/SyntaxHighlighter/Styles/SyntaxHighlighter.css" />
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shCore.js" type="text/javascript" charset="GBK"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushCpp.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushCSharp.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushCss.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushDelphi.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushJava.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushJScript.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushPhp.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushPython.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushRuby.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushSql.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushVb.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushXml.js" type="text/javascript"></script>
 <!--代码高亮end-->
 <script type="text/javascript">
     var DbName = GetQuery('DbName');//数据库名称
@@ -249,7 +249,10 @@
             var postData = GetWebControls("#TableProperty");
             postData["TableFieldJson"] = GetTableDataJson("#grid_Field");
             getAjax("/CommonModule/DataBase/LookSql", postData, function (data) {
-                $("#SQLCode").val(data);
+                
+                $("#SQLCode").text(data);
+                $("#SQLCode").val(data).show();
+               // alert(data);
                 dp.SyntaxHighlighter.HighlightAll('SQLCode');
                 Loading(false);
             });

@@ -1,7 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
 
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
@@ -14,10 +10,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 首页快捷方式
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.10.22 21:02</date>
-    /// </author>
     /// </summary>
     [Description("首页快捷方式")]
     [PrimaryKey("ShortcutsId")]

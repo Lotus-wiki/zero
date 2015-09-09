@@ -1,8 +1,4 @@
-﻿//=====================================================================================
-// All Rights Reserved , Copyright © Learun 2014
-// Software Developers © Learun 2014
-//=====================================================================================
-
+﻿
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
 using System;
@@ -14,10 +10,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 模块设置
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.07.09 12:11</date>
-    /// </author>
     /// </summary>
     [Description("模块设置")]
     [PrimaryKey("ModuleId")]

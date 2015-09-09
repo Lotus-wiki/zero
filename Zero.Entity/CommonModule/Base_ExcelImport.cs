@@ -1,7 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
 
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
@@ -14,10 +10,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// Excel导入关系表
-    /// <author>
-    ///		<name>Liu</name>
-    ///		<date>2014.08.25 22:41</date>
-    /// </author>
     /// </summary>
     [Description("Excel导入关系表")]
     [PrimaryKey("ImportId")]

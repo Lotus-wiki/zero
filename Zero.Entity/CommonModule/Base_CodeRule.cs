@@ -1,8 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
-
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
 using System;
@@ -14,10 +9,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 编码规则主表
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.10.03 16:51</date>
-    /// </author>
     /// </summary>
     [Description("编码规则主表")]
     [PrimaryKey("CodeRuleId")]

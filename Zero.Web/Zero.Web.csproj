@@ -134,6 +134,7 @@
     <Compile Include="Areas\CodeMaticModule\Controllers\CodeMaticController.cs" />
     <Compile Include="Areas\CommonModule\CommonModuleAreaRegistration.cs" />
     <Compile Include="Areas\CommonModule\Controllers\AboutSoftwareController.cs" />
+    <Compile Include="Areas\CommonModule\Controllers\ArticleController.cs" />
     <Compile Include="Areas\CommonModule\Controllers\ButtonController.cs" />
     <Compile Include="Areas\CommonModule\Controllers\CodeRuleController.cs" />
     <Compile Include="Areas\CommonModule\Controllers\CompanyController.cs" />
@@ -8742,6 +8743,19 @@
   <ItemGroup>
     <Content Include="Views\Home\StartIndex.cshtml" />
     <Content Include="Views\Home\StartPanel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\SkinIndex.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\CommonModule\Views\Article\Detail.cshtml" />
+    <Content Include="Areas\CommonModule\Views\Article\Form.cshtml" />
+    <Content Include="Areas\CommonModule\Views\Article\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Utility\OptionUser.cshtml" />
+    <Content Include="Views\Utility\PrintPage.cshtml" />
+    <Content Include="Views\Utility\QueryPage.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

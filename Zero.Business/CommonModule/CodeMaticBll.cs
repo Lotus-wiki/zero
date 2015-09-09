@@ -244,12 +244,12 @@ namespace Zero.Business
         public string CodeBuilder_Entity(string table, string Key, DataTable Entity_dt)
         {
             StringBuilder sb_Entity = new StringBuilder();
-            sb_Entity.Append("//=====================================================================================\r\n");
-            sb_Entity.Append("// All Rights Reserved , Copyright @ " + Company + " " + CreateYear + "\r\n");
-            sb_Entity.Append("// Software Developers @ " + Company + " " + CreateYear + "\r\n");
-            sb_Entity.Append("//=====================================================================================\r\n\r\n");
-            sb_Entity.Append("using LeaRun.DataAccess.Attributes;\r\n");
-            sb_Entity.Append("using LeaRun.Utilitiy;\r\n");
+            //sb_Entity.Append("//=====================================================================================\r\n");
+            //sb_Entity.Append("// All Rights Reserved , Copyright @ " + Company + " " + CreateYear + "\r\n");
+            //sb_Entity.Append("// Software Developers @ " + Company + " " + CreateYear + "\r\n");
+            //sb_Entity.Append("//=====================================================================================\r\n\r\n");
+            sb_Entity.Append("using Zero.DataAccess.Attributes;\r\n");
+            sb_Entity.Append("using Zero.Utility;\r\n");
             sb_Entity.Append("using System;\r\n");
             sb_Entity.Append("using System.ComponentModel;\r\n");
             sb_Entity.Append("using System.ComponentModel.DataAnnotations;\r\n");
@@ -259,10 +259,10 @@ namespace Zero.Business
             sb_Entity.Append("{\r\n");
             sb_Entity.Append("    /// <summary>\r\n");
             sb_Entity.Append("    /// " + ClassName + "\r\n");
-            sb_Entity.Append("    /// <author>\r\n");
-            sb_Entity.Append("    ///		<name>" + Author + "</name>\r\n");
-            sb_Entity.Append("    ///		<date>" + CreateDate + "</date>\r\n");
-            sb_Entity.Append("    /// </author>\r\n");
+            //sb_Entity.Append("    /// <author>\r\n");
+            //sb_Entity.Append("    ///		<name>" + Author + "</name>\r\n");
+            //sb_Entity.Append("    ///		<date>" + CreateDate + "</date>\r\n");
+            //sb_Entity.Append("    /// </author>\r\n");
             sb_Entity.Append("    /// </summary>\r\n");
             sb_Entity.Append("    [Description(\"" + ClassName + "\")]\r\n");
             sb_Entity.Append("    [PrimaryKey(\"" + Key + "\")]\r\n");
@@ -382,13 +382,13 @@ namespace Zero.Business
         public string GetCodeBuilderBusiness(string table)
         {
             StringBuilder sb_Business = new StringBuilder();
-            sb_Business.Append("//=====================================================================================\r\n");
-            sb_Business.Append("// All Rights Reserved , Copyright @ " + Company + " " + CreateYear + "\r\n");
-            sb_Business.Append("// Software Developers @ " + Company + " " + CreateYear + "\r\n");
-            sb_Business.Append("//=====================================================================================\r\n\r\n");
-            sb_Business.Append("using LeaRun.Entity;\r\n");
-            sb_Business.Append("using LeaRun.Repository;\r\n");
-            sb_Business.Append("using LeaRun.Utilitiy;\r\n");
+            //sb_Business.Append("//=====================================================================================\r\n");
+            //sb_Business.Append("// All Rights Reserved , Copyright @ " + Company + " " + CreateYear + "\r\n");
+            //sb_Business.Append("// Software Developers @ " + Company + " " + CreateYear + "\r\n");
+            //sb_Business.Append("//=====================================================================================\r\n\r\n");
+            sb_Business.Append("using Zero.Entity;\r\n");
+            sb_Business.Append("using Zero.Repository;\r\n");
+            sb_Business.Append("using Zero.Utility;\r\n");
             sb_Business.Append("using System.Collections;\r\n");
             sb_Business.Append("using System.Collections.Generic;\r\n");
             sb_Business.Append("using System.Text;\r\n\r\n");
@@ -396,10 +396,10 @@ namespace Zero.Business
             sb_Business.Append("{\r\n");
             sb_Business.Append("    /// <summary>\r\n");
             sb_Business.Append("    /// " + ClassName + "\r\n");
-            sb_Business.Append("    /// <author>\r\n");
-            sb_Business.Append("    ///		<name>" + Author + "</name>\r\n");
-            sb_Business.Append("    ///		<date>" + CreateDate + "</date>\r\n");
-            sb_Business.Append("    /// </author>\r\n");
+            //sb_Business.Append("    /// <author>\r\n");
+            //sb_Business.Append("    ///		<name>" + Author + "</name>\r\n");
+            //sb_Business.Append("    ///		<date>" + CreateDate + "</date>\r\n");
+            //sb_Business.Append("    /// </author>\r\n");
             sb_Business.Append("    /// </summary>\r\n");
             sb_Business.Append("    public class " + BusinessName + " : RepositoryFactory<" + EntityName + ">\r\n");
             sb_Business.Append("    {\r\n");
@@ -826,9 +826,9 @@ namespace Zero.Business
         public string GetCodeBuilderController(string table)
         {
             StringBuilder sb_Controller = new StringBuilder();
-            sb_Controller.Append("using LeaRun.Business;\r\n");
-            sb_Controller.Append("using LeaRun.Entity;\r\n");
-            sb_Controller.Append("using LeaRun.Utilitiy;\r\n");
+            sb_Controller.Append("using Zero.Business;\r\n");
+            sb_Controller.Append("using Zero.Entity;\r\n");
+            sb_Controller.Append("using Zero.Utility;\r\n");
             sb_Controller.Append("using System;\r\n");
             sb_Controller.Append("using System.Collections;\r\n");
             sb_Controller.Append("using System.Collections.Generic;\r\n");
@@ -837,7 +837,7 @@ namespace Zero.Business
             sb_Controller.Append("using System.Web;\r\n");
             sb_Controller.Append("using System.Web.Mvc;\r\n\r\n");
 
-            sb_Controller.Append("namespace LeaRun.WebApp.Areas." + AreasName + ".Controllers\r\n");
+            sb_Controller.Append("namespace Zero.Web.Areas." + AreasName + ".Controllers\r\n");
             sb_Controller.Append("{\r\n");
 
             sb_Controller.Append("    /// <summary>\r\n");

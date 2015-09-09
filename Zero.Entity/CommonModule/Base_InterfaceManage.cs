@@ -1,8 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
-
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
 using System;
@@ -14,10 +9,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 接口管理
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.11.05 10:36</date>
-    /// </author>
     /// </summary>
     [Description("接口管理")]
     [PrimaryKey("InterfaceId")]

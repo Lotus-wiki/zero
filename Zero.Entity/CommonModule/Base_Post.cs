@@ -1,7 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
 
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
@@ -14,10 +10,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 岗位管理
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.08.07 15:34</date>
-    /// </author>
     /// </summary>
     [Description("岗位管理")]
     [PrimaryKey("PostId")]

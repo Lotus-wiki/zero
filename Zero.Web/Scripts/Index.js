@@ -72,21 +72,21 @@ function IndexOut() {
         lock: true,
         icon: "hits.png",
         content: msg,
-        title: "力软提示",
+        title: "提示",
         button: [
-        {
-            name: '退出',
-            callback: function () {
-                Loading(true, "正在退出系统...");
-                window.setTimeout(function () {
-                    getAjax("/Login/OutLogin", "", function (data) {
-                        window.opener = null;
-                        var wind = window.open('', '_self');
-                        wind.close();
-                    })
-                }, 200);
-            }
-        },
+        //{
+        //    name: '退出',
+        //    callback: function () {
+        //        Loading(true, "正在退出系统...");
+        //        window.setTimeout(function () {
+        //            getAjax("/Login/OutLogin", "", function (data) {
+        //                window.opener = null;
+        //                var wind = window.open('', '_self');
+        //                wind.close();
+        //            })
+        //        }, 200);
+        //    }
+        //},
         {
             name: '注销',
             callback: function () {

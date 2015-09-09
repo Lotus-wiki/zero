@@ -1,6 +1,6 @@
 //=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
+// All Rights Reserved
+// Software Developers
 //=====================================================================================
 
 using Zero.DataAccess.Attributes;
@@ -14,10 +14,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 操作按钮权限表
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.08.18 16:02</date>
-    /// </author>
     /// </summary>
     [Description("操作按钮权限表")]
     [PrimaryKey("ButtonPermissionId")]

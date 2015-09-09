@@ -1,7 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
 
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
@@ -14,10 +10,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 视图设置权限表
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.09.14 13:17</date>
-    /// </author>
     /// </summary>
     [Description("视图设置权限表")]
     [PrimaryKey("ViewPermissionId")]

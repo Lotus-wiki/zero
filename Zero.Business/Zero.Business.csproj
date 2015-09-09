@@ -43,6 +43,7 @@
     <Compile Include="BaseUtility\BaseFactory.cs" />
     <Compile Include="BaseUtility\BaseManager.cs" />
     <Compile Include="BaseUtility\IBaseManager.cs" />
+    <Compile Include="CommonModule\Base_ArticleBll.cs" />
     <Compile Include="CommonModule\Base_ButtonBll.cs" />
     <Compile Include="CommonModule\Base_ButtonPermissionBll.cs" />
     <Compile Include="CommonModule\Base_CodeRuleBll.cs" />

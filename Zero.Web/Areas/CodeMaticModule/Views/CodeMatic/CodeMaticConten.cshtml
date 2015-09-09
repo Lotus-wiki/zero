@@ -3,24 +3,24 @@
     Layout = "~/Views/Shared/_LayoutIndex.cshtml";
 }
 <!--表单智能向导组件start-->
-<link href="~/Content/Scripts/smartwizard/smart_wizard.css" rel="stylesheet" />
-<script src="~/Content/Scripts/smartwizard/jquery.smartWizard-2.0.min.js" charset="GBK"></script>
+<link href="~/Scripts/smartwizard/smart_wizard.css" rel="stylesheet" />
+<script src="~/Scripts/smartwizard/jquery.smartWizard-2.0.min.js" charset="GBK"></script>
 <!--表单智能向导组件end-->
 <!--代码高亮start-->
-<link type="text/css" rel="stylesheet" href="~/Content/Scripts/SyntaxHighlighter/Styles/SyntaxHighlighter.css" />
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shCore.js" type="text/javascript" charset="GBK"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushCpp.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushCSharp.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushCss.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushDelphi.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushJava.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushJScript.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushPhp.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushPython.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushRuby.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushSql.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushVb.js" type="text/javascript"></script>
-<script src="~/Content/Scripts/SyntaxHighlighter/Scripts/shBrushXml.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="~/Scripts/SyntaxHighlighter/Styles/SyntaxHighlighter.css" />
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shCore.js" type="text/javascript" charset="GBK"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushCpp.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushCSharp.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushCss.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushDelphi.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushJava.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushJScript.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushPhp.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushPython.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushRuby.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushSql.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushVb.js" type="text/javascript"></script>
+<script src="~/Scripts/SyntaxHighlighter/Scripts/shBrushXml.js" type="text/javascript"></script>
 <!--代码高亮end-->
 <script type="text/javascript">
     var tableCode = GetQuery('tableCode');            //表名
@@ -247,7 +247,10 @@
         }
         getAjax("/CodeMaticModule/CodeMatic/GetCodeBuilderEntity", postData, function (data) {
             $('#Entitycode').val("");
-            $('#Entitycode').val(data).show();
+            $('#Entitycode').val(data);
+            var strs = $('#Entitycode').val();
+            $('#Entitycode').text(strs);
+            $('#Entitycode').show();
             dp.SyntaxHighlighter.HighlightAll('Entitycode');
         });
     }
@@ -262,6 +265,7 @@
         }
         getAjax("/CodeMaticModule/CodeMatic/GetCodeBuilderBusiness", postData, function (datacode) {
             $('#Businesscode').val("");
+            $('#Businesscode').text(datacode);
             $('#Businesscode').val(datacode).show();
             dp.SyntaxHighlighter.HighlightAll('Businesscode');
         });
@@ -280,6 +284,7 @@
         }
         getAjax("/CodeMaticModule/CodeMatic/GetCodeBuilderFrom", postData, function (datacode) {
             $('#Formcode').val("");
+            $('#Formcode').text(datacode);
             $('#Formcode').val(datacode).show();
             dp.SyntaxHighlighter.HighlightAll('Formcode');
         });
@@ -298,6 +303,7 @@
         }
         getAjax("/CodeMaticModule/CodeMatic/GetCodeBuilderFromDetail", postData, function (datacode) {
             $('#FormDetailcode').val("");
+            $('#FormDetailcode').text(datacode);
             $('#FormDetailcode').val(datacode).show();
             dp.SyntaxHighlighter.HighlightAll('FormDetailcode');
         });
@@ -321,6 +327,7 @@
         }
         getAjax("/CodeMaticModule/CodeMatic/GetCodeBuilderList", postData, function (datacode) {
             $('#Listcode').val("");
+            $('#Listcode').text(datacode);
             $('#Listcode').val(datacode).show();
             dp.SyntaxHighlighter.HighlightAll('Listcode');
         });
@@ -337,6 +344,7 @@
         }
         getAjax("/CodeMaticModule/CodeMatic/GetCodeBuilderController", postData, function (datacode) {
             $('#Controllercode').val("");
+            $('#Controllercode').text(datacode);
             $('#Controllercode').val(datacode).show();
             dp.SyntaxHighlighter.HighlightAll('Controllercode');
         });
@@ -654,6 +662,10 @@
             <div class="ScrollBar" style="padding-top: 1px;">
                 <div id="divEntity" class="tabPanel">
                     <textarea id="Entitycode" name="Entitycode" class="CSharp" style="display: none;">
+                        function ss()
+                        {
+                           var a=null;
+                        }
                                 </textarea>
                 </div>
                 <div id="divBusiness" class="tabPanel" style="display: none;">

@@ -10,11 +10,6 @@ namespace Zero.Utility
 {
     /// <summary>
     /// Log4Net日志 工厂
-    /// 版本：2.0
-    /// <author>
-    ///		<name>shecixiong</name>
-    ///		<date>2014.03.03</date>
-    /// </author>
     /// </summary>
     public class LogFactory
     {

@@ -48,6 +48,7 @@
     <Compile Include="BaseUtility\BaseEntity.cs" />
     <Compile Include="BaseUtility\DataContext.cs" />
     <Compile Include="BaseUtility\EntityModel\FileProperty.cs" />
+    <Compile Include="CommonModule\Base_Article.cs" />
     <Compile Include="CommonModule\Base_BackupJob.cs" />
     <Compile Include="CommonModule\Base_Button.cs" />
     <Compile Include="CommonModule\Base_ButtonPermission.cs" />

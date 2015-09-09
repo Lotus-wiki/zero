@@ -1,7 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
 
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
@@ -14,10 +10,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 对象用户关系表
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.08.18 14:01</date>
-    /// </author>
     /// </summary>
     [Description("对象用户关系表")]
     [PrimaryKey("ObjectUserRelationId")]

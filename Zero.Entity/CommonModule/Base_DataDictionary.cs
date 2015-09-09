@@ -1,7 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
 
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
@@ -14,10 +10,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 数据字典
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.07.18 14:08</date>
-    /// </author>
     /// </summary>
     [Description("数据字典")]
     [PrimaryKey("DataDictionaryId")]

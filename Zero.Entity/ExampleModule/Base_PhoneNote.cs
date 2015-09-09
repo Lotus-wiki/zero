@@ -1,7 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
 
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
@@ -14,10 +10,7 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 手机短信表
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.10.22 11:03</date>
-    /// </author>
+
     /// </summary>
     [Description("手机短信表")]
     [PrimaryKey("PhoneNoteId")]

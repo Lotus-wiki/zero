@@ -2,3 +2,8 @@ F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.WebService\bin\Debug\Zero.WebService.
 F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.WebService\bin\Debug\Zero.WebService.pdb
 F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.WebService\obj\Debug\Zero.WebService.dll
 F:\工作\wwwroot\jumeili.mvc\Jumeili\Zero.WebService\obj\Debug\Zero.WebService.pdb
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.WebService\bin\Debug\Zero.WebService.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.WebService\bin\Debug\Zero.WebService.pdb
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.WebService\obj\Debug\Zero.WebService.csprojResolveAssemblyReference.cache
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.WebService\obj\Debug\Zero.WebService.dll
+F:\Work\wwwroot\jumeili.mvc\Jumeili\Zero.WebService\obj\Debug\Zero.WebService.pdb

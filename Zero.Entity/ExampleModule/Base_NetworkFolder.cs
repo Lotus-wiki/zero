@@ -1,7 +1,3 @@
-//=====================================================================================
-// All Rights Reserved , Copyright @ Learun 2014
-// Software Developers @ Learun 2014
-//=====================================================================================
 
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
@@ -14,10 +10,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 网络硬盘文件夹表
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.10.16 10:53</date>
-    /// </author>
     /// </summary>
     [Description("网络硬盘文件夹表")]
     [PrimaryKey("FolderId")]
