@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_LayoutIndex.cshtml";
 }
 <!--复制/粘贴组件start-->
-<script src="~/Content/Scripts/ZeroClipboard/ZeroClipboard.js"></script>
+<script src="~/Scripts/ZeroClipboard/ZeroClipboard.js"></script>
 <!--复制/粘贴组件end-->
 <script type="text/javascript">
     $(document).ready(function () {
@@ -110,7 +110,7 @@
     //复制
     function btn_copy() {
         var txt = "测试复制";
-        ZeroClipboard.setMoviePath("@Url.Content("~/Content/Scripts/ZeroClipboard/ZeroClipboard.swf")");
+        ZeroClipboard.setMoviePath("@Url.Content("~/Scripts/ZeroClipboard/ZeroClipboard.swf")");
         //新建对象   
         clip = new ZeroClipboard.Client();
         //设置指向光标为手型   

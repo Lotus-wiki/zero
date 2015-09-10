@@ -3,15 +3,15 @@
     Layout = "~/Views/Shared/_LayoutForm.cshtml";
 }
 <!--编辑器组件start-->
-<script src="~/Content/Scripts/ckeditor/ckeditor.js"></script>
+<script src="~/Scripts/ckeditor/ckeditor.js"></script>
 <!--编辑器组件endt-->
 <!--选择颜色组件start-->
-<link href="~/Content/Scripts/cxColor/css/jquery.cxcolor.css" rel="stylesheet" />
-<script src="~/Content/Scripts/cxColor/js/jquery.cxcolor.js"></script>
+<link href="~/Scripts/cxColor/css/jquery.cxcolor.css" rel="stylesheet" />
+<script src="~/Scripts/cxColor/js/jquery.cxcolor.js"></script>
 <!--选择颜色组件end-->
 <!--上传文件组件start-->
-<link href="~/Content/Scripts/uploadify/uploadify.css" rel="stylesheet" />
-<script src="~/Content/Scripts/uploadify/jquery.uploadify.js"></script>
+<link href="~/Scripts/uploadify/uploadify.css" rel="stylesheet" />
+<script src="~/Scripts/uploadify/jquery.uploadify.js"></script>
 <!--上传文件组件end-->
 <script>
     $(function () {
@@ -44,7 +44,7 @@
     function uploadify() {
         $("#uploadify").uploadify({
             uploader: '/ExampleModule/Email/EmailUpload',
-            swf: '/Content/Scripts/uploadify/uploadify.swf',
+            swf: '/Scripts/uploadify/uploadify.swf',
             buttonText: "上传文件",
             height: 24,
             width: 70,

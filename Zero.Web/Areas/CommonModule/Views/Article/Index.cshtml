@@ -9,28 +9,38 @@
     //加载表格
     function GetGrid() {
         $("#gridTable").jqGrid({
-        url: "@Url.Content("~/CommonModule/Article/GridPageJson")",
-        datatype: "json",
-        height: $(window).height() - 149,
-        autowidth: true,
-        colModel: [
-                { label: '标题', name: 'Title', index: 'Title', width: 0, align: 'left',sortable: true  },
-                { label: '作者', name: 'Author', index: 'Author', width: 0, align: 'left',sortable: true  },
-                { label: '详细内容', name: 'Content', index: 'Content', width: 0, align: 'left',sortable: true  },
-                { label: '添加时间', name: 'CreateDate', index: 'CreateDate', width: 0, align: 'left',sortable: true  },
-        ],
-        pager: "#gridPager",
-        sortname: 'CreateDate',
-        sortorder: 'desc',
-        rownumbers: true,
-        shrinkToFit: false,
-        gridview: true,
-    });
-}
+            url: "@Url.Content("~/CommonModule/Article/GridPageJson")",
+            datatype: "json",
+            height: $(window).height() - 149,
+            autowidth: true,
+            colModel: [
+                    { label: '自增ID', name: 'ArticleId', index: 'ArticleId', width: 0, align: 'left', sortable: true },
+                    { label: '类别标签', name: 'CategoryTags', index: 'CategoryTags', width: 0, align: 'left', sortable: true },
+                    { label: '关键字标签', name: 'KeywordTags', index: 'KeywordTags', width: 0, align: 'left', sortable: true },
+                    { label: '标题', name: 'Title', index: 'Title', width: 0, align: 'left', sortable: true },
+                    { label: '作者', name: 'Author', index: 'Author', width: 0, align: 'left', sortable: true },
+                    { label: '详细内容', name: 'Content', index: 'Content', width: 0, align: 'left', sortable: true },
+                    { label: '封面图', name: 'ImgUrl', index: 'ImgUrl', width: 0, align: 'left', sortable: true },
+                    { label: '星级', name: 'Star', index: 'Star', width: 0, align: 'left', sortable: true },
+                    { label: '1-正常,0-待审核,-1-已删除', name: 'Status', index: 'Status', width: 0, align: 'left', sortable: true },
+                    { label: '排序', name: 'Sort', index: 'Sort', width: 0, align: 'left', sortable: true },
+                    { label: '添加时间', name: 'CreateDate', index: 'CreateDate', width: 0, align: 'left', sortable: true },
+                    { label: '创建人ID', name: 'CreateUserId', index: 'CreateUserId', width: 0, align: 'left', sortable: true },
+                    { label: '创建人名称', name: 'CreateUserName', index: 'CreateUserName', width: 0, align: 'left', sortable: true },
+                    { label: '评语', name: 'Comment', index: 'Comment', width: 0, align: 'left', sortable: true },
+            ],
+            pager: "#gridPager",
+            sortname: 'Sort',
+            sortorder: 'desc',
+            rownumbers: true,
+            shrinkToFit: false,
+            gridview: true,
+        });
+    }
     //新增
     function btn_add() {
         var url = "/CommonModule/Article/Form"
-        openDialog(url, "Form", "新增文章表", 770, 395, function (iframe) {
+        openDialog(url, "Form", "新增文章表", 800, 395, function (iframe) {
             top.frames[iframe].AcceptClick()
         });
     }
@@ -39,7 +49,7 @@
         var KeyValue = GetJqGridRowValue("#gridTable", "ArticleId");
         if (IsChecked(KeyValue)) {
             var url = "/CommonModule/Article/Form?KeyValue=" + KeyValue;
-            openDialog(url, "Form", "编辑文章表", 770, 395, function (iframe) {
+            openDialog(url, "Form", "编辑文章表", 800, 395, function (iframe) {
                 top.frames[iframe].AcceptClick();
             });
         }
@@ -65,7 +75,7 @@
     //刷新
     function windowload() {
         $("#gridTable").trigger("reloadGrid"); //重新载入
-        
+
     }
 </script>
 <div class="leftline rightline QueryArea" style="margin: 1px; margin-top: 0px; margin-bottom: 0px;">

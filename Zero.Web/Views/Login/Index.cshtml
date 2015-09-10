@@ -51,7 +51,7 @@
                         Account: escape(txtaccount),
                         Password: escape($.md5(txtpassword))
                     }
-                    alert(escape($.md5(txtpassword)));
+                    //alert(escape($.md5(txtpassword)));
                     getAjax('/Login/CheckLogin', postData, function (rs) {
                         if (parseInt(rs) == -1) {
                             $("#txtaccount").focus();

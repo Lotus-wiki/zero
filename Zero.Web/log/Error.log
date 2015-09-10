@@ -1,4 +1,8 @@
-2015-09-09 08:43:56,713 [18] ERROR Zero.DataAccess.DbHelper - 参数化查询 '(@CompanyId nvarchar(4000))SELECT top 1 CompanyId,ParentId,Categ' 需要参数 '@CompanyId'，但未提供该参数。
-2015-09-09 08:45:53,603 [8] ERROR Zero.DataAccess.DbHelper - 参数化查询 '(@CompanyId nvarchar(4000))SELECT top 1 CompanyId,ParentId,Categ' 需要参数 '@CompanyId'，但未提供该参数。
-2015-09-09 14:31:36,231 [28] ERROR Zero.DataAccess.DbHelper - 在此上下文中不允许使用名称 "匿名"。有效表达式包括常量、常量表达式和变量(在某些上下文中)。不允许使用列名。
-2015-09-09 14:35:37,774 [36] ERROR Zero.DataAccess.DbHelper - 无法对 表 'Base_Article' 执行 删除，因为它不存在，或者您没有所需的权限。
+2015-09-10 15:02:24,435 [23] ERROR Zero.DataAccess.DbHelper - 列名 'Sort' 无效。
+2015-09-10 15:54:54,459 [60] ERROR Zero.DataAccess.DbHelper - 列名 'Sort' 无效。
+2015-09-10 16:20:58,097 [5] ERROR Zero.DataAccess.DbHelper - 不能将值 NULL 插入列 'CategoryTags'，表 'abc.dbo.Base_Article'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+2015-09-10 16:21:08,791 [23] ERROR Zero.DataAccess.DbHelper - 不能将值 NULL 插入列 'CategoryTags'，表 'abc.dbo.Base_Article'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+2015-09-10 16:23:56,432 [14] ERROR Zero.DataAccess.DbHelper - 不能将值 NULL 插入列 'CategoryTags'，表 'abc.dbo.Base_Article'；列不允许有 Null 值。INSERT 失败。
+语句已终止。

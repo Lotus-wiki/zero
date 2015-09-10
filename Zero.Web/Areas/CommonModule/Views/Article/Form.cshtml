@@ -2,6 +2,9 @@
     ViewBag.Title = "文章表》表单页面";
     Layout = "~/Views/Shared/_LayoutForm.cshtml";
 }
+<!--编辑器组件start-->
+<script src="~/Scripts/ckeditor/ckeditor.js"></script>
+<!--编辑器组件endt-->
 <script type="text/javascript">
     var KeyValue = GetQuery('KeyValue');//主键
     $(function () {
@@ -32,30 +35,93 @@
     <div id="message" style="display: none"></div>
     <table class="form">
         <tr>
+            <th class='formTitle'>自增ID：</th>
+            <td class='formValue'>
+                <input id="ArticleId" maxlength=10 type="text" class="txt" />
+            </td>
+        </tr>
+        <tr>
+            <th class='formTitle'>类别标签：</th>
+            <td class='formValue'>
+                <label id="CategoryTags" />
+            </td>
+        </tr>
+        <tr>
+            <th class='formTitle'>关键字标签：</th>
+            <td class='formValue'>
+                <label id="KeywordTags" />
+            </td>
+        </tr>
+        <tr>
             <th class='formTitle'>标题：</th>
             <td class='formValue'>
-                <input id="Title" maxlength=50 type="text" class="txt required" datacol="yes" err="标题" checkexpession="NotNull"  />
+                <input id="Title" maxlength=50 type="text" class="txt" datacol="yes" err="标题" checkexpession="NotNull" />
             </td>
         </tr>
         <tr>
             <th class='formTitle'>作者：</th>
             <td class='formValue'>
-                <input id="Author" maxlength=50 type="text" class="txt"   />
+                <input id="Author" maxlength=50 type="text" class="txt" />
             </td>
         </tr>
         <tr>
-            <th class='formTitle'>内容：</th>
+            <th class='formTitle'>详细内容：</th>
             <td class='formValue'>
-                <textarea id="Content" maxlength=2147483647 class="txtArea"></textarea> 
+                <textarea id="Content"  class="txtArea"></textarea>
             </td>
         </tr>
         <tr>
-            <th class='formTitle'>发布时间：</th>
+            <th class='formTitle'>封面图：</th>
             <td class='formValue'>
-                <input id="CreateDate" maxlength=23 type="text" class="txt Wdate"   />
+                <input id="ImgUrl" maxlength=255 type="text" class="txt" />
             </td>
         </tr>
         <tr>
+            <th class='formTitle'>星级：</th>
+            <td class='formValue'>
+                <input id="Star" maxlength=10 type="text" class="txt" />
+            </td>
         </tr>
+        <tr>
+            <th class='formTitle'>1-正常,0-待审核,-1-已删除：</th>
+            <td class='formValue'>
+                <input id="Status" maxlength=10 type="text" class="txt" />
+            </td>
+        </tr>
+        <tr>
+            <th class='formTitle'>排序：</th>
+            <td class='formValue'>
+                <input id="Sort" maxlength=10 type="text" class="txt" />
+            </td>
+        </tr>
+        <tr>
+            <th class='formTitle'>添加时间：</th>
+            <td class='formValue'>
+                <input id="CreateDate" maxlength=23 type="text" class="txt Wdate" />
+            </td>
+        </tr>
+        <tr>
+            <th class='formTitle'>创建人ID：</th>
+            <td class='formValue'>
+                <input id="CreateUserId" maxlength=50 type="text" class="txt" />
+            </td>
+        </tr>
+        <tr>
+            <th class='formTitle'>创建人名称：</th>
+            <td class='formValue'>
+                <input id="CreateUserName" maxlength=50 type="text" class="txt" />
+            </td>
+        </tr>
+        <tr>
+            <th class='formTitle'>评语：</th>
+            <td class='formValue'>
+                <input id="Comment" maxlength=200 type="text" class="txt" />
+            </td>
+        </tr>
+        <tr></tr>
     </table>
 </form>
+<script type="text/javascript">
+    //初始化编辑器
+    CKEDITOR.replace("Content", { toolbar: 'Basic', height: 330 });
+</script>

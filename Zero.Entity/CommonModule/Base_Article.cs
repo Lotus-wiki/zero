@@ -1,7 +1,6 @@
-﻿//=====================================================================================
-// All Rights Reserved , Copyright @ ABC 2015
-// Software Developers @ ABC 2015
-//=====================================================================================
+﻿
+
+
 
 using Zero.DataAccess.Attributes;
 using Zero.Utility;
@@ -14,10 +13,6 @@ namespace Zero.Entity
 {
     /// <summary>
     /// 文章表
-    /// <author>
-    ///		<name>abc</name>
-    ///		<date>2015.09.09 14:50</date>
-    /// </author>
     /// </summary>
     [Description("文章表")]
     [PrimaryKey("ArticleId")]
@@ -30,6 +25,18 @@ namespace Zero.Entity
         /// <returns></returns>
         [DisplayName("自增ID")]
         public int? ArticleId { get; set; }
+        /// <summary>
+        /// 类别标签
+        /// </summary>
+        /// <returns></returns>
+        [DisplayName("类别标签")]
+        public string CategoryTags { get; set; }
+        /// <summary>
+        /// 关键字标签
+        /// </summary>
+        /// <returns></returns>
+        [DisplayName("关键字标签")]
+        public string KeywordTags { get; set; }
         /// <summary>
         /// 标题
         /// </summary>
@@ -49,6 +56,30 @@ namespace Zero.Entity
         [DisplayName("详细内容")]
         public string Content { get; set; }
         /// <summary>
+        /// 封面图
+        /// </summary>
+        /// <returns></returns>
+        [DisplayName("封面图")]
+        public string ImgUrl { get; set; }
+        /// <summary>
+        /// 星级
+        /// </summary>
+        /// <returns></returns>
+        [DisplayName("星级")]
+        public int? Star { get; set; }
+        /// <summary>
+        /// 1-正常,0-待审核,-1-已删除
+        /// </summary>
+        /// <returns></returns>
+        [DisplayName("1-正常,0-待审核,-1-已删除")]
+        public int? Status { get; set; }
+        /// <summary>
+        /// 排序
+        /// </summary>
+        /// <returns></returns>
+        [DisplayName("排序")]
+        public int? Sort { get; set; }
+        /// <summary>
         /// 添加时间
         /// </summary>
         /// <returns></returns>
@@ -66,6 +97,12 @@ namespace Zero.Entity
         /// <returns></returns>
         [DisplayName("创建人名称")]
         public string CreateUserName { get; set; }
+        /// <summary>
+        /// 评语
+        /// </summary>
+        /// <returns></returns>
+        [DisplayName("评语")]
+        public string Comment { get; set; }
         #endregion
 
         #region 扩展操作

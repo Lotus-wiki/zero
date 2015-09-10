@@ -8537,6 +8537,9 @@
     <Content Include="Scripts\uploadify\uploadify.css" />
     <Content Include="Scripts\uploadify\uploadify.swf" />
     <Content Include="Scripts\validator\validator.js" />
+    <Content Include="Scripts\zeroclipboard\ZeroClipboard.js" />
+    <Content Include="Scripts\zeroclipboard\ZeroClipboard.min.js" />
+    <Content Include="Scripts\zeroclipboard\ZeroClipboard.swf" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
