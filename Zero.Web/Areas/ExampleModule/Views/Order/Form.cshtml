@@ -42,7 +42,8 @@
                     $("#ItemCode➩" + rowindex).focus();
                 });
             });
-            if (GetQuery("motionType") == 0) {
+            if (GetQuery("motionType") == "0") {
+                //alert("x");
                 $("#button_Commit_Save").attr({ "disabled": "disabled" }).attr('onclick', '');
                 $('input,select,textarea').attr({ "disabled": "disabled" });
             }
@@ -265,6 +266,7 @@
     //保存事件
     function SubmitOrderForm() {
         if (!CheckDataValid('#form1')) {
+            //alert('error');
             return false;
         }
         confirmDialog('提示', '注：您确认要保存此操作吗？', function (r) {
@@ -300,7 +302,7 @@
                 <td align="center" colspan="8">
                     <div style="font-family: 华文楷体; font-size: x-large; height: 60px; line-height: 60px;">
                         采购订单&nbsp;
-                            <img src="~/Content/Images/billstatis1.png" style="vertical-align: middle;" />
+                            @*<img src="~/Content/Images/billstatis1.png" style="vertical-align: middle;" />*@
                     </div>
                 </td>
             </tr>
