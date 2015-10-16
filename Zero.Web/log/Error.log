@@ -1,0 +1,2 @@
+2015-10-16 13:51:32,622 [21] ERROR Zero.DataAccess.DbHelper - 不能将值 NULL 插入列 'CategoryTags'，表 'abc.dbo.Base_Article'；列不允许有 Null 值。INSERT 失败。
+语句已终止。

@@ -17,10 +17,6 @@ namespace Zero.Business
 {
     /// <summary>
     /// 对象用户关系表
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.08.18 14:01</date>
-    /// </author>
     /// </summary>
     public class Base_ObjectUserRelationBll : RepositoryFactory<Base_ObjectUserRelation>
     {

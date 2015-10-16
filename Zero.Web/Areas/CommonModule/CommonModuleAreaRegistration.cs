@@ -18,7 +18,7 @@ namespace Zero.Web.Areas.CommonModule
                 this.AreaName + "_Default",
                 this.AreaName + "/{controller}/{action}/{id}",
                 new { area = this.AreaName, controller = "Home", action = "Index", id = UrlParameter.Optional },
-                new string[] { "Zero.Web.Areas." + this.AreaName + ".Controllers" }
+                new  string[] { "Zero.Web.Areas." + this.AreaName + ".Controllers" }
             );
         }
     }

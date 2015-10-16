@@ -19,10 +19,6 @@ namespace Zero.Business
 {
     /// <summary>
     /// 系统日志表
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.07.22 22:43</date>
-    /// </author>
     /// </summary>
     public class Base_SysLogBll : RepositoryFactory<Base_SysLog>
     {

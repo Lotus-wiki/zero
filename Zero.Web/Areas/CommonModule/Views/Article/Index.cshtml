@@ -14,7 +14,7 @@
             height: $(window).height() - 149,
             autowidth: true,
             colModel: [
-                    { label: '自增ID', name: 'ArticleId', index: 'ArticleId', width: 0, align: 'left', sortable: true },
+                    { label: '文章ID', name: 'ArticleId', index: 'ArticleId', width: 0, align: 'left', sortable: true },
                     { label: '类别标签', name: 'CategoryTags', index: 'CategoryTags', width: 0, align: 'left', sortable: true },
                     { label: '关键字标签', name: 'KeywordTags', index: 'KeywordTags', width: 0, align: 'left', sortable: true },
                     { label: '标题', name: 'Title', index: 'Title', width: 0, align: 'left', sortable: true },
@@ -22,7 +22,16 @@
                     { label: '详细内容', name: 'Content', index: 'Content', width: 0, align: 'left', sortable: true },
                     { label: '封面图', name: 'ImgUrl', index: 'ImgUrl', width: 0, align: 'left', sortable: true },
                     { label: '星级', name: 'Star', index: 'Star', width: 0, align: 'left', sortable: true },
-                    { label: '1-正常,0-待审核,-1-已删除', name: 'Status', index: 'Status', width: 0, align: 'left', sortable: true },
+                    //{ label: '1-正常,0-待审核,-1-已删除', name: 'Status', index: 'Status', width: 0, align: 'left', sortable: true },
+
+                    {
+                        label: '状态', name: 'Star', index: 'Star', width: 45, align: 'center',
+                        formatter: function (cellvalue, options, rowObject) {
+                            if (cellvalue == '1') return "<img src='../../Content/Images/checkokmark.gif'/>";
+                            if (cellvalue == '0') return "<img src='../../Content/Images/checknomark.gif'/>";
+                        }
+                    },
+
                     { label: '排序', name: 'Sort', index: 'Sort', width: 0, align: 'left', sortable: true },
                     { label: '添加时间', name: 'CreateDate', index: 'CreateDate', width: 0, align: 'left', sortable: true },
                     { label: '创建人ID', name: 'CreateUserId', index: 'CreateUserId', width: 0, align: 'left', sortable: true },

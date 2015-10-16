@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Zero.Business;
+using Zero.DataAccess;
 using Zero.Entity;
+using Zero.Repository;
 using Zero.Utility;
 
 namespace Zero.Web.Controllers
@@ -46,7 +50,8 @@ namespace Zero.Web.Controllers
                 objScan.DataPath = Server.MapPath("~/Resource/IPScaner/QQWry.Dat");
                 string IPAddressName = objScan.IPLocation();
                 string outmsg = "";
-               // VerifyIPAddress(Account, IPAddress, IPAddressName, Token);
+                //IP限制
+                //VerifyIPAddress(Account, IPAddress, IPAddressName, Token);
                 //系统管理
                 if (Account == ConfigHelper.AppSettings("CurrentUserName"))
                 {
@@ -144,6 +149,25 @@ namespace Zero.Web.Controllers
             Session.Abandon();  //取消当前会话
             Session.Clear();    //清除当前浏览器所以Session
             return Content("1");
+        }
+
+        /// <summary>
+        /// IP限制验证
+        /// </summary>
+        /// <param name="Account"></param>
+        /// <param name="IPAddress"></param>
+        /// <param name="IPAddressName"></param>
+        /// <param name="OpenId"></param>
+        public void VerifyIPAddress(string Account, string IPAddress, string IPAddressName, string OpenId)
+        {
+            if (ConfigHelper.AppSettings("VerifyIPAddress") == "true")
+            {
+                List<DbParameter> parameter = new List<DbParameter>();
+                parameter.Add(DbFactory.CreateDbParameter("@IPAddress", IPAddress));
+                parameter.Add(DbFactory.CreateDbParameter("@IPAddressName", IPAddressName));
+                parameter.Add(DbFactory.CreateDbParameter("@OpenId", DESEncrypt.Decrypt(OpenId)));
+                int IsOk = DataFactory.Database().ExecuteByProc("[Login].dbo.[PROC_verify_IPAddress]", parameter.ToArray());
+            }
         }
     }
 }

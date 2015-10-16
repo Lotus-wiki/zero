@@ -96,7 +96,7 @@ namespace Zero.Business
             {
                 strSql.Append(@"SELECT * FROM Base_Module M");
             }
-            strSql.Append(" ORDER BY  M.SortCode ASC ");
+            strSql.Append(" ORDER BY  M.SortCode Desc ");
             return DataFactory.Database().FindListBySql<Base_Module>(strSql.ToString());
         }
         /// <summary>

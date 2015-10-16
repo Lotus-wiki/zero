@@ -18,10 +18,6 @@ namespace Zero.Business
 {
     /// <summary>
     /// 用户管理
-    /// <author>
-    ///		<name>she</name>
-    ///		<date>2014.08.11 15:45</date>
-    /// </author>
     /// </summary>
     public class Base_UserBll : RepositoryFactory<Base_User>
     {
